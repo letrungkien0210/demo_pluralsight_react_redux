@@ -5,7 +5,7 @@ import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
 import { Router, browserHistory} from 'react-router';
 import routes from './routes';
-import {loadCourse} from './actions/courseAction';
+import {loadCourse} from './actions/courseActions';
 import './styles/styles.css'; //Webpack can import CSS files too!
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
