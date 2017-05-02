@@ -5,6 +5,7 @@ export function loadCoursesSuccess(courses){
   return { type: types.LOAD_COURSES_SUCCESS, courses};
 }
 
+//thunk
 export function loadCourse(){
   return function(dispatch){
     return courseApi.getAllCourses().then( courses => {
@@ -12,5 +13,5 @@ export function loadCourse(){
     }).catch(error => {
       throw  error;
     });
-  }
+  };
 }
